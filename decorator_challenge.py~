@@ -1,0 +1,11 @@
+def addSandwich( meat ):
+	def addingSandwich():
+		return meat() + "sandwich"
+	return addingSandwich
+
+@addSandwich		
+def meat():
+	return "chicken "
+
+print meat()
+		
